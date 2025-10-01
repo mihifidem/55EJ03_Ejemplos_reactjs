@@ -1,0 +1,8 @@
+.moduleBox {
+  background-color: purple;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px 0;
+}

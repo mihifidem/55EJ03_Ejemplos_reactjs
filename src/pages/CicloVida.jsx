@@ -22,11 +22,17 @@ function CicloVida() {
     }
   }, [count]);
 
+   useEffect(() => {
+  
+      console.log('Ejecucion en cada render');
+
+  });
+
   return (
     <div style={{ padding: "2rem", border: "1px solid #ccc" }}>
       {show ? (
         <>
-          <h2>Ciclo de Vida con useEffect</h2>
+          <h2 className="rojo ">Ciclo de Vida con useEffect</h2>
           <p>Contador: {count}</p>
           <button onClick={() => setCount(count + 1)}>+1</button>
           <button onClick={() => setShow(false)} style={{ marginLeft: "1rem" }}>

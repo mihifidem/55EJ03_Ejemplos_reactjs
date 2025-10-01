@@ -6,7 +6,7 @@ function Posts() {
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((res) => res.json())
-      .then((data) => setPosts(data.slice(0, 15))); // 5 primeros
+      .then((data) => setPosts(data.slice(0, 15))); // 15 primeros
   }, []);
 
   return (

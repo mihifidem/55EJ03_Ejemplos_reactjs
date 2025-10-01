@@ -8,10 +8,11 @@ import Layout from './components/Layout';
 import Products from './pages/Products';
 import ProductDetail from "./pages/ProductDetail";
 import CicloVida from './pages/CicloVida';
-import Reloj from './components/Reloj';
+import Reloj from './components/Reloj.jsx';
 import Temporizador from './components/Temporizador'
 import Posts from './components/Posts';
 import Caja from './components/Caja';
+import Estilos from './components/Estilos.jsx';
 
 function App() {
   // const [theme, setTheme] = useState('light');
@@ -32,7 +33,9 @@ function App() {
    <Link to='/temporizador'>Temporizador</Link> | {"  "}
    <Link to='/posts'>Posts API</Link> | {"  "}
    <Link to='/caja'>Caja</Link> | {"  "}
+   <Link to='/estilos'>Estilos</Link> | {"  "}
 
+    <h1 className='titulo'>Titulo</h1>
  <Routes>
      
         <Route path="/" element={<Home />} />
@@ -46,6 +49,7 @@ function App() {
         <Route path="/temporizador" element={<Temporizador />} />
         <Route path="/posts" element={<Posts />} />
         <Route path="/caja" element={<Caja />} />
+        <Route path="/estilos" element={<Estilos />} />
 
         <Route path="*" element={<h2 style={{ padding: "2rem" }}>404 - Página no encontrada</h2>} />
 
